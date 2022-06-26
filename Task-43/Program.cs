@@ -7,7 +7,7 @@ using static System.Console;
 Clear();
 
 Write("Введите числа через пробел: ");
-double[] arr = MyMetods.GetArrayFromString(ReadLine());
+double[] arr = MyMetods.GetArrayFromStringToDouble(ReadLine());
 WriteLine($"Точка пересечения прямых ({String.Join(";", IntersectionLines(arr))})");
 
 double[] IntersectionLines(double[] arr)

@@ -8,11 +8,11 @@ using MyLibs;
 Clear();
 
 Write("Введите числа через пробел: ");
-double[] arr = MyMetods.GetArrayFromString(ReadLine());
+int[] arr = MyMetods.GetArrayFromStringToInt(ReadLine());
 
 WriteLine($"Вы ввели {PositiveNumbers(arr)} чисел больше 0");
 
-int PositiveNumbers(double[] array)
+int PositiveNumbers(int[] array)
 {
    int count = 0;
    for (int i = 0; i < array.Length; i++)
